@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinite Logo Carousel</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      padding: 40px;
+      color: #69a6f9;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    .logo-grid .row {
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 20px 0;
+    }
+
+    .logo-track {
+      display: inline-flex;
+      align-items: center;
+      animation: scroll-left 30s linear infinite;
+    }
+    .logo-track.reverse {
+      animation: scroll-right 30s linear infinite;
+    }
+
+    .logo-track:hover {
+      animation-play-state: paused;
+    }
+
+    .logo {
+      height: 50px;
+      margin: 0 30px;
+      filter: brightness(0) invert(1); /* white logos */
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes scroll-right {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-grid">
+
+    <!-- Row 1 (scrolls left) -->
+    <div class="row">
+      <div class="logo-track">
+        <!-- First set -->
+        <img class="logo" src="logos/analog.one.png" alt="Analog.one">
+        <img class="logo" src="logos/duckchain.io.png" alt="Duckchain.io">
+        <img class="logo" src="logos/firestarter.fun.png" alt="Firestarter.fun">
+        <img class="logo" src="logos/Scaling_Labs.png" alt="Scaling Labs">
+        <img class="logo" src="logos/zenswap.io.png" alt="Zenswap.io">
+        <img class="logo" src="logos/quackai.ai.png" alt="quackai.ai">
+        <img class="logo" src="logos/phemex.com.png" alt="Phemex.com">
+        <img class="logo" src="logos/virtualbacon.com.png" alt="VirtualBacon">
+        <img class="logo" src="logos/voxies.png" alt="Voxies">
+        <img class="logo" src="logos/alkimi.png" alt="Alkimi">
+        <!-- Duplicate -->
+        <img class="logo" src="logos/analog.one.png" alt="Analog.one">
+        <img class="logo" src="logos/duckchain.io.png" alt="Duckchain.io">
+        <img class="logo" src="logos/firestarter.fun.png" alt="Firestarter.fun">
+        <img class="logo" src="logos/Scaling_Labs.png" alt="Scaling Labs">
+        <img class="logo" src="logos/zenswap.io.png" alt="Zenswap.io">
+        <img class="logo" src="logos/quackai.ai.png" alt="quackai.ai">
+        <img class="logo" src="logos/phemex.com.png" alt="Phemex.com">
+        <img class="logo" src="logos/virtualbacon.com.png" alt="VirtualBacon">
+        <img class="logo" src="logos/voxies.png" alt="Voxies">
+        <img class="logo" src="logos/alkimi.png" alt="Alkimi">
+      </div>
+    </div>
+
+    <!-- Row 2 (scrolls right) -->
+    <div class="row">
+      <div class="logo-track reverse">
+        <img class="logo" src="logos/axie_infinity.png" alt="Axie Infinity">
+        <img class="logo" src="logos/davensi.png" alt="Davensi">
+        <img class="logo" src="logos/ibtimes.png" alt="IBTimes">
+        <img class="logo" src="logos/inputpr.com.png" alt="inputpr.com">
+        <img class="logo" src="logos/zogilabs.png" alt="Zogi Labs">
+        <img class="logo" src="logos/worldofbezogia.png" alt="World of Bezogia">
+        <img class="logo" src="logos/roseon.finance.png" alt="Roseon.finance">
+        <img class="logo" src="logos/arrowheads.biz.png" alt="Arrowheads">
+        <img class="logo" src="logos/furlough.com.png" alt="Furlough.com">
+        <img class="logo" src="logos/insiderfinance.io.png" alt="InsiderFinance.io">
+        <img class="logo" src="logos/octaloop.com.png" alt="Octaloop.com">
+        <img class="logo" src="logos/icy.tools.png" alt="Icy.tools">
+        <!-- Duplicate -->
+        <img class="logo" src="logos/axie_infinity.png" alt="Axie Infinity">
+        <img class="logo" src="logos/davensi.png" alt="Davensi">
+        <img class="logo" src="logos/ibtimes.png" alt="IBTimes">
+        <img class="logo" src="logos/inputpr.com.png" alt="inputpr.com">
+        <img class="logo" src="logos/zogilabs.png" alt="Zogi Labs">
+        <img class="logo" src="logos/worldofbezogia.png" alt="World of Bezogia">
+        <img class="logo" src="logos/roseon.finance.png" alt="Roseon.finance">
+        <img class="logo" src="logos/arrowheads.biz.png" alt="Arrowheads">
+        <img class="logo" src="logos/furlough.com.png" alt="Furlough.com">
+        <img class="logo" src="logos/insiderfinance.io.png" alt="InsiderFinance.io">
+        <img class="logo" src="logos/octaloop.com.png" alt="Octaloop.com">
+        <img class="logo" src="logos/icy.tools.png" alt="Icy.tools">
+      </div>
+    </div>
+
+    <!-- Row 3 (scrolls left again) -->
+    <div class="row">
+      <div class="logo-track">
+        <img class="logo" src="logos/analog.one.png" alt="Analog.one">
+        <img class="logo" src="logos/duckchain.io.png" alt="Duckchain.io">
+        <img class="logo" src="logos/firestarter.fun.png" alt="Firestarter.fun">
+        <img class="logo" src="logos/Scaling_Labs.png" alt="Scaling Labs">
+        <img class="logo" src="logos/zenswap.io.png" alt="Zenswap.io">
+        <img class="logo" src="logos/quackai.ai.png" alt="quackai.ai">
+        <img class="logo" src="logos/phemex.com.png" alt="Phemex.com">
+        <img class="logo" src="logos/virtualbacon.com.png" alt="VirtualBacon">
+        <img class="logo" src="logos/voxies.png" alt="Voxies">
+        <img class="logo" src="logos/alkimi.png" alt="Alkimi">
+        <!-- Duplicate set -->
+        <img class="logo" src="logos/analog.one.png" alt="Analog.one">
+        <img class="logo" src="logos/duckchain.io.png" alt="Duckchain.io">
+        <img class="logo" src="logos/firestarter.fun.png" alt="Firestarter.fun">
+        <img class="logo" src="logos/Scaling_Labs.png" alt="Scaling Labs">
+        <img class="logo" src="logos/zenswap.io.png" alt="Zenswap.io">
+        <img class="logo" src="logos/quackai.ai.png" alt="quackai.ai">
+        <img class="logo" src="logos/phemex.com.png" alt="Phemex.com">
+        <img class="logo" src="logos/virtualbacon.com.png" alt="VirtualBacon">
+        <img class="logo" src="logos/voxies.png" alt="Voxies">
+        <img class="logo" src="logos/alkimi.png" alt="Alkimi">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
